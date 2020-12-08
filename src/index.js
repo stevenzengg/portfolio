@@ -13,7 +13,9 @@ import github1 from "./resources/github1.jpg"
 import linkedin from "./resources/linkedin.jpg"
 import mail1 from "./resources/mail1.jpg"
 import bigcover2 from "./resources/bigcover2.jpg"
+import cover from "./resources/cover.jpg"
 import Row from "react-bootstrap/Row"
+import ProgressBar from "react-bootstrap/ProgressBar"
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 
@@ -41,7 +43,7 @@ const ScrollDemo = () => {
 
 
       
-      <Container fluid id = "home" style = {{minHeight: "100vh", backgroundImage: `url(${bigcover2})`, backgroundSize: "cover", backgroundPosition: "bottom", justifyContent: "center", alignItems: "center"}}>
+      <Container fluid id = "home" style = {{minHeight: "100vh", backgroundImage: `url(${bigcover2})`, backgroundSize: "cover", backgroundPosition: "bottom",}}>
 
 
 
@@ -63,6 +65,7 @@ const ScrollDemo = () => {
 
         <h1 style = {{textAlign: "center", fontSize: 75, fontWeight: 700, paddingTop: "10%"}}>Steven Zeng</h1>
         <h1 style = {{textAlign: "center", fontSize: 20, fontWeight: 600, paddingTop: "1%"}}>Hello there. Welcome to my page.</h1>
+        <h1 style = {{textAlign: "center", fontSize: 20, fontWeight: 600}}>Background Pic: <i>Over the Canopy</i> by Steven Zeng</h1>
         <Row style = {{marginLeft: "1%", justifyContent: "center", alignItems: "center", maxWidth: "100%", marginTop: "1%"}}>
                 <a href = "https://www.linkedin.com/in/stevenzengg" style = {{maxWidth: "5%"}}>
                   <img src = {linkedin} alt = "linkedin" style = {{maxWidth: "50%"}}/>
@@ -132,16 +135,82 @@ const ScrollDemo = () => {
 
 
       <Container  style = {{backgroundColor: "black", maxWidth: "100%", minHeight: "100vh"}}   id = "about" >
-            <p style = {{textAlign: "center", fontSize: 20, color: "Aquamarine", paddingTop: "5%"}}>About</p>
-            <h1 style = {{maxWidth: "95%", color: "white", textAlign: "center"}}>Let me introduce myself. You could call me {descriptors[index]}.</h1>
-        <Row style = {{ maxWidth: "80%"}}>
-          <Col md = {{span: 4, offset: 4}}>
-          <p>hi</p>
-          </Col>
+
+
+        <Row>
           <Col>
-          <p>hi</p>
+            <h5 style = {{textAlign: "center", color: "Aquamarine", paddingTop: "5%"}}>About</h5>
+            <h1 style = {{maxWidth: "95%", color: "white", textAlign: "center"}}>Let me introduce myself. You could call me {descriptors[index]}.</h1>
           </Col>
         </Row>
+
+
+        <Row fluid style = {{maxHeight: "30%", paddingTop: "2%"}}>
+          <Col style = {{maxWidth: "35%", maxHeight: "100%"}}>
+            <div style = {{maxHeight: "100%", maxWidth: "100%"}}>
+              <img src = {cover} alt = "cover" style = {{position: "relative", maxWidth: "30%", maxHeight: "20%", borderRadius: "50%", float: "right"}}/>
+            </div>
+          </Col>
+          <Col style = {{maxWidth: "40%"}}>
+              <h5 style = {{color: "silver", lineHeight: "200%", marginTop: "1.5%"}}> I'm a Penn State University class of 2023 undergraduate 
+              majoring in Computer Science and Applied Statistics and minoring in Engineering Leadership Design. 
+              I spend most of my time tinkering with different projects to diversify my experience with the various platforms and tools online.</h5>
+          </Col>
+        </Row>    
+
+
+        <Row style = {{ paddingTop: "3%", marginBottom: "3%"}}>
+          <Col>
+            <div style = {{maxWidth: "50%", float: "right"}}>
+              <h3 className = "whitetitle">Profile</h3>
+              <h6 className = "silvertext">Currently, I'm seeking a software developer internship for the 2020 summer. 
+              I am looking to build my technical and soft portfolios while contributing to company success.  
+              I'm open to different locations and positions. If you think I'm a good fit, please contact me by <a href = "mailto: zengstevenz@gmail.com">zengstevenz@gmail.com</a></h6>
+              <h5 className = "slatetitle">Full Name:</h5>
+              <h6 className = "slatetext">Steven Zeng</h6>
+              <h5 className = "slatetitle">Birth Date:</h5>
+              <h6 className = "slatetext">February 13, 2001</h6>  
+              <h5 className = "slatetitle">E-Mail:</h5>
+              <h6 className = "slatetext"><a href = "mailto: zengstevenz@gmail.com">zengstevenz@gmail.com</a></h6>
+            </div>
+
+          </Col>
+
+
+          <Col>
+            <div style = {{maxWidth: "50%"}}>
+              <h3 className = "whitetitle">Skills</h3>
+              <h6 className = "silvertext">I specialize in programming with a background in 
+              computer science and applied statistics. I work efficiently on teams as both a team player and independent worker. 
+              I enjoy learning new languages, tools, and frameworks. I have highlighted below my more prominent languages: 
+              </h6>
+            </div>
+              <h5 className = "slatetitle">Python</h5>
+              <div>
+                <ProgressBar striped variant = "info" now = {90}/>
+              </div>
+
+              <h5 className = "slatetitle">Java</h5>
+              <div>
+                <ProgressBar striped variant = "info" now = {60}/>
+              </div>
+
+              <h5 className = "slatetitle">JS/HTML/CSS</h5>
+              <div>
+              <ProgressBar striped variant = "info" now = {70}/>
+              </div>
+
+              <h5 className = "slatetitle">C</h5>
+              <div>
+              <ProgressBar striped variant = "info" now = {70}/>
+              </div>
+          </Col>
+        </Row>
+
+        <Row style = {{justifyContent: "center", paddingBottom: "5%"}}>
+          <Button variant = "outline-info" size = "lg">Resume/CV</Button>
+        </Row>
+        
       </Container>
 
 
@@ -193,46 +262,6 @@ const ScrollDemo = () => {
   >
     <h3 style={{ color: '#61b8ff' }}>Title, Company</h3>
     <h4 style={{ color: '#61b8ff' }}>Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-  </TimelineItem>
-  <TimelineItem
-    key="003"
-    dateComponent={(
-      <div
-        style={{
-          display: 'block',
-          float: 'left',
-          padding: '10px',
-          background: 'rgb(150, 150, 150)',
-          color: '#fff',
-        }}
-      >
-        11/2008 – 04/2009
-      </div>
-    )}
-  >
-    <h3>Title, Company</h3>
-    <h4>Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
     <p>
       Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
       exercitation. Veniam velit adipisicing anim excepteur nostrud magna

@@ -16,3 +16,31 @@ html {
   scroll-behavior: smooth;
 }
 
+.silvertext {
+  color: silver;
+  line-height: 250%;
+  margin-bottom: 5%;
+}
+
+.whitetitle {
+  color: white;
+  line-height: 200%;
+}
+.slatetitle{
+  color: hsl(1, 0%, 23%);
+  line-height: 100%;
+}
+
+.slatetext {
+  color: hsl(0, 0%, 40%);
+  font-weight: 750;
+  font-size: 17;
+  margin-bottom: 5%;
+}
+
+.progress{
+  margin-bottom: 3.5%;
+  max-width: 50%;
+  background-color: red;
+}
+
