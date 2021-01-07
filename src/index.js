@@ -54,7 +54,7 @@ const ScrollDemo = () => {
             <Nav className="mr-auto">
               <Nav.Link href="#home" style = {{color: "white", fontWeight: "500"}}>Home</Nav.Link>
               <Nav.Link href="#about" style = {{color: "white", fontWeight: "500"}}>About</Nav.Link>
-              <Nav.Link href="#resume" style = {{color: "white", fontWeight: "500"}}>Resume</Nav.Link>
+              <Nav.Link href="#myjourney" style = {{color: "white", fontWeight: "500"}}>My Journey</Nav.Link>
               <Nav.Link href="#projects" style = {{color: "white", fontWeight: "500"}}>Projects</Nav.Link>
               <Nav.Link href="#activities" style = {{color: "white", fontWeight: "500"}}>Activities</Nav.Link>
               <Nav.Link href="#contact" style = {{color: "white", fontWeight: "500"}}>Contact</Nav.Link>
@@ -66,6 +66,8 @@ const ScrollDemo = () => {
         <h1 style = {{textAlign: "center", fontSize: 75, fontWeight: 700, paddingTop: "10%"}}>Steven Zeng</h1>
         <h1 style = {{textAlign: "center", fontSize: 20, fontWeight: 600, paddingTop: "1%"}}>Hello there. Welcome to my page.</h1>
         <h1 style = {{textAlign: "center", fontSize: 20, fontWeight: 600}}>Background Pic: <i>Over the Canopy</i> by Steven Zeng</h1>
+        
+        
         <Row style = {{marginLeft: "1%", justifyContent: "center", alignItems: "center", maxWidth: "100%", marginTop: "1%"}}>
                 <a href = "https://www.linkedin.com/in/stevenzengg" style = {{maxWidth: "5%"}}>
                   <img src = {linkedin} alt = "linkedin" style = {{maxWidth: "50%"}}/>
@@ -76,7 +78,7 @@ const ScrollDemo = () => {
                 <a href = "https://www.github.com/stevenzengg" style = {{maxWidth: "5%", marginLeft: "1.5%"}}>
                   <img src = {github1} alt = "github" style = {{maxWidth: "50%"}}/>
                 </a>
-            </Row>
+        </Row>
 
 
 
@@ -124,7 +126,7 @@ const ScrollDemo = () => {
           <Nav className="mr-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#resume">Resume</Nav.Link>
+            <Nav.Link href="#myjourney">My Journey</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#activities">Activities</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
@@ -139,7 +141,7 @@ const ScrollDemo = () => {
 
         <Row>
           <Col>
-            <h5 style = {{textAlign: "center", color: "Aquamarine", paddingTop: "5%"}}>About</h5>
+            <h5 style = {{textAlign: "center", color: "DarkTurquoise", paddingTop: "5%"}}>About</h5>
             <h1 style = {{maxWidth: "95%", color: "white", textAlign: "center"}}>Let me introduce myself. You could call me {descriptors[index]}.</h1>
           </Col>
         </Row>
@@ -174,7 +176,7 @@ const ScrollDemo = () => {
               <h6 className = "slatetext"><a href = "mailto: zengstevenz@gmail.com">zengstevenz@gmail.com</a></h6>
             </div>
 
-          </Col>
+          </Col> 
 
 
           <Col>
@@ -218,100 +220,99 @@ const ScrollDemo = () => {
 
 
 
-      <Container id = "resume" style={{minHeight: "100vh" }} >
-      <Timeline lineColor={'#ddd'}>
-  <TimelineItem
-    key="001"
-    dateText="11/2010 – Present"
-    style={{ color: '#e86971' }}
-  >
-    <h3>Title, Company</h3>
-    <h4>Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-  </TimelineItem>
-  <TimelineItem
-    key="002"
-    dateText="04/2009 – 11/2010"
-    dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
-    bodyContainerStyle={{
-      background: '#ddd',
-      padding: '20px',
-      borderRadius: '8px',
-      boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
-    }}
-  >
-    <h3 style={{ color: '#61b8ff' }}>Title, Company</h3>
-    <h4 style={{ color: '#61b8ff' }}>Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-  </TimelineItem>
-  <TimelineItem
-    key="004"
-    dateText="08/2008 – 11/2008"
-    dateInnerStyle={{ background: '#76bb7f' }}
-  >
-    <h3>Title, Company</h3>
-    <h4>Subtitle</h4>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-    <p>
-      Est incididunt sint eu minim dolore mollit velit velit commodo ex nulla
-      exercitation. Veniam velit adipisicing anim excepteur nostrud magna
-      nostrud aliqua dolor. Sunt aute est duis ut nulla officia irure
-      reprehenderit laborum fugiat dolore in elit. Adipisicing do qui duis Lorem
-      est.
-    </p>
-  </TimelineItem>
-</Timeline>
+      <Container id = "myjourney" style={{minHeight: "100vh" }} >
+
+        <Timeline lineColor={'#ddd'}>
+
+          <TimelineItem
+            key="001"
+            dateText="05/2020 – 07/2020"
+            style={{ color: '#e86971' }}
+          >
+            <h3>Deep Learning Algorithms and Analysis, Penn State University</h3>
+            <h4 style = {{paddingBottom: "2%"}}><i>Honors Student</i></h4>
+            <p>
+              This summer, I had the opportunity to take on a graduate-level, mathematics-focused computer science course online 
+              through Penn State. I am thankful for being able to work with a world-renowned professor, Dr. Jinchao Xu, along with
+              other dedicated researchers such as Dr. Juncai He and Dr. Jonathan Siegel.
+            </p>
+            <p>
+              In this class, I utilized Pytorch libraries along with CUDA functionalities to construct custom machine learning models and neural networks. 
+              These frameworks were provided different algorithms for training, including stochastic gradient descent and logistic regression. 
+              Typically, my neural networks employed the use of ReLU for activation. 
+              I trained my models primarily on labelled image datasets, each of which are comprised of thousands of images separated by category.
+            </p>
+            <p>
+              Over the length of the course, I was able to make progress in creating simple 1-2 hidden layer, to residual (ResNet) convolutional neural networks (CNN). When comparing 
+              image classification results, I was able to achieve 92% precision over 20 epochs on the MNIST dataset with a logistic regression model. On the same dataset, I achieved 97% precision over
+              20 epochs using a 1 hidden layer neural network. By leveraging a ResNet18 convolutional neural network, I achieved 94% precision on the CIFAR10 dataset. In my final project, I 
+              achieved 95% precision on CIFAR10 using MgNet, a modern framework leveraging both ResNet and Multigrid methods.
+            </p>
+          </TimelineItem>
+
+
+          <TimelineItem
+            key="002"
+            dateText="11/2019 – Present"
+            dateInnerStyle={{ background: '#61b8ff', color: '#000' }}
+            bodyContainerStyle={{
+              background: '#ddd',
+              padding: '20px',
+              borderRadius: '8px',
+              boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+            }}
+          >
+            <h3 style={{ color: '#61b8ff' }}>Notivate, DACTR</h3>
+            <h4 style={{ color: '#61b8ff', paddingBottom: "2%" }}><i>Front-end Developer</i></h4>
+            <p>
+              Along with a group of dedicated friends and fellow Penn Staters, I jumpstarted an idea into a tangible application on the 
+              Google Play Store. The app, originally named DACTR, allowed users to journal daily into a database that could analyze the text, 
+              identify potentially enjoyable activities for the user, and locate nearby providers such as gyms, pools, stores, theaters,
+              and even outdoor trails under cognitive behavioral therapy. 
+            </p>
+            <p>
+              This project is built using a NativeScript + Angular framework with typescript and utilizes Google Cloud Platform Natural Language Processing 
+              to analyze user sentiment combined with a custom dictionary database to differentiate between liked 
+              and disliked activities. When quering and displaying nearby areas of interest, it pulls from a Google Maps API. 
+              The project also allows for user accounts via a Google Firebase database, with 
+              built-in identification and security protocols. 
+            </p>
+          </TimelineItem>
+
+
+          <TimelineItem
+            key="003"
+            dateText="08/2019 – Present"
+            dateInnerStyle={{ background: '#76bb7f' }}
+          >
+            <h3>College of Engineering, Penn State University</h3>
+            <h4 style = {{paddingBottom: "2%"}}><i>Intended Computer Science B.Sc., Applied Statistics B.Sc., Minor: Engineering Leadership Development</i></h4>
+            <p>
+              From my first visit at Penn State, I was pulled into the student-centric atmosphere at Penn State. Help and opportunities to learn
+              surrounded me. What's more, the beautiful, nature-filled campus amazed my computer-oriented self, 
+              while the bustling, decorative downtown next door
+              satisfied my social and food cravings.
+            </p>
+            <p>
+              It was at Penn State that I found a great group of friends, and now, in my sophomore year, I am proud to be part of the Developer Student Club, Python Learning Organization, 
+              Engineering House, and Engineering Consulting Collaborative, which of the last two I am the standing treasurer.
+            </p>
+          </TimelineItem>
+
+        </Timeline>
+
       </Container>
 
       <Container id = "projects" style = {{backgroundColor: "rgb(255,224,179)", maxWidth: "100%", minHeight: "100vh"}} >
-        <h1>hi</h1>
+        <h1 style = {{textAlign: "center", paddingTop: "20%"}}>In the makes. Coming soon! :)</h1>
       </Container>
 
-      <Container id = "activities" style={{minHeight: "100vh"}} >
-        <h1>hi</h1>
+      <Container id = "activities" style={{backgroundColor: "rgb(133,204,209)", maxWidth: "100%", minHeight: "100vh"}} >
+        <h1 style = {{textAlign: "center", paddingTop: "20%"}}>In the makes. Coming soon! :)</h1>
       </Container>
 
-      <Container id = "contact" style={{minHeight: "100vh"}} >
-        <h1>hi</h1>
+      <Container id = "contact" style = {{backgroundColor: "rgb(133,174,129)", maxWidth: "100%", minHeight: "100vh"}} >
+        <h1 style = {{textAlign: "center", paddingTop: "20%"}}>In the makes. Coming soon! :)</h1>
       </Container>
       
     </>
